@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:id="@+id/globalStates"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/colorWhite"
+                android:text="GLOBAL STATES"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/globalStates"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view1"
+                android:id="@+id/linear1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Cases"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvCases"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/linear1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view2"
+                android:id="@+id/linear2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Today Cases"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTodaysCases"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view3"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/linear2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view3"
+                android:id="@+id/linear3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Deaths"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvDeaths"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view4"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/linear3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view4"
+                android:id="@+id/linear4"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Today Deaths"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTodaysDeaths"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/linear4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view5"
+                android:id="@+id/linear5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Recovered"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvRecovered"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view6"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/linear5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view6"
+                android:id="@+id/linear6"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Active"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvActive"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_marginTop="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_below="@+id/linear6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view7"
+                android:id="@+id/linear7"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="critical"
+                    android:fontFamily="@font/poppin_regular"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvCritical"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textSize="16sp"
+                    android:hint="123124"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/counrtuFlag"
+           android:src="@mipmap/ic_launcher"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/countryName"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15sp"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:text="India"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="75dp"
+        android:layout_below="@+id/linear1"
+        android:background="#4DFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>
