@@ -24,6 +24,7 @@ import retrofit2.Response;
 
 public class HomeActivity extends AppCompatActivity {
 
+    //init
     TextView cases , todayCases , deaths , todayDeaths , recovered , active ,critical , affectedCountries;
     Button contrytacker;
     @RequiresApi(api = Build.VERSION_CODES.N)
